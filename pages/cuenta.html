@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMCOR | Mi Cuenta</title>
+    <link rel="stylesheet" href="../assets/css/inicio.css">
+    <link rel="stylesheet" href="../assets/css/cuenta.css">
+    <link rel="stylesheet" href="../assets/css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">LIMCOR</a>
+        <div class="busqueda">
+            <input type="text" placeholder="Que estas buscando?">
+            <button class="btn-buscar">Buscar</button>
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="navegacion" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="lista-navegacion">
+                <li>
+                    <a href="../index.html" class="active">INICIO</a>
+                </li>
+                <li>
+                    <a href="cuenta.html" class="active">MI CUENTA</a>
+                </li>
+                <li>
+                    <a href="" class="active">MI CARRITO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- NAVEGACION -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="">TEMPORADA S23</a></li>
+            <li><a href="">CATEGORIAS</a></li>
+            <li><a href="">PROMOCIONES</a></li>
+            <li><a href="">LOCALES</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Seccion de ingreso de usuario -->
+    <section class="container">
+        <div class="box">
+            <h2>INICIAR SESION</h2>
+            <label for="nombre" class="formulario-label">Usuario:</label>
+            <input type="text" name="nombre" class="formulario-input">
+            <label for="password" class="formulario-label">Contrasenia:</label>
+            <input type="password" name="password" id="" class="formulario-input">
+            <a href="">Olvidaste tu contrasenia?</a>
+            <div class="boton">
+                <button class="btn-registro">Ingresar</button>
+            </div>
+            <a href="registro.html">Sos nuevo?. Haz click aqui</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="derechos">     
+            <div class="frecuentes">
+                <h3>Contenido</h3>
+                <a href="" class="link-frt">Contacto</a>
+                <a href="" class="link-frt">LIMCOR CLUB</a>
+                <a href="" class="link-frt">Franquicias</a>
+                <a href="" class="link-frt">Formas de pago</a>
+                <a href="" class="link-frt">Formas de envio</a>
+                <a href="" class="link-frt">Cambios y devoluciones</a>
+                <a href="" class="link-frt">Preguntas frecuentes</a>
+                <a href="" class="link-frt">Venta mayorista</a>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="img9"
+                        class="icono-rs"></a>
+                <a href="https://www.instagram.com/" target="_blank "><img src="../assets/img/instagram.png" alt="img10"
+                        class="icono-rs"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/whatsapp.png" alt="img11"
+                        class="icono-rs"></a>
+                <a href=""><img src="../assets/img/data-fiscal.jpg" alt="img11" class="icono"></a>
+            </div>
+        </div>
+        <div class="derechos-copy">
+            <p>&copy; LIMCOR , Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

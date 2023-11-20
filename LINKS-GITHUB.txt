@@ -1,0 +1,6 @@
+/--------------LINK AL REPOSITORIO GITHUB------------------/
+https://github.com/AlexLimCor/proyecto-bam2.0
+
+/----------------LINK DEPLOY GITHUB ----------------------/
+https://alexlimcor.github.io/proyecto-bam2.0/
+

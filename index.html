@@ -4,33 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link a Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>LIMCOR | INDUMENTARIA - Home </title>
-    <link rel="stylesheet" href="assets/css/mipagina.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <!-- LINK DE ICONOS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7ae2358eea.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <div class="header-container">
-            <a href="index.html" class="header-item-logo">
-                <h2>LIMCOR</h2>
-            </a>
-
-            <label for="menu" class="header-label">
-                <img src="assets/img/menu.svg" alt="navegacion" class="header-img">
-            </label>
-
-            <input type="checkbox" name="" id="menu" class="header-input">
-
-            <div class="header-menu">
-                <a href="index.html" class="header-item">HOME</a>
-                <a href="assets/pages/ingresarCuenta.html" class="header-item">MI CUENTA</a>
-                <a href="" class="header-item">MI CARRITO</a>
-            </div>
+        <a href="index.html" class="logo">LIMCOR</a>
+        <div class="busqueda">
+            <input type="text" placeholder="Que estas buscando?">
+            <button class="btn-buscar">Buscar</button>
         </div>
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="navegacion" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="lista-navegacion">
+                <li>
+                    <a href="index.html" class="active">INICIO</a>
+                </li>
+                <li>
+                    <a href="pages/cuenta.html" class="active">MI CUENTA</a>
+                </li>
+                <li>
+                    <a href="" class="active">MI CARRITO</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <!-- NAVEGACION -->
     <nav>
         <ul class="nav-links">
             <li><a href="">TEMPORADA S23</a></li>
@@ -39,39 +45,26 @@
             <li><a href="">LOCALES</a></li>
         </ul>
     </nav>
-    <!-- CARRUSEL IMG -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner mb-3">
-            <div class="carousel-item active">
-                <img src="assets/img/PRESENTACION.avif" class="d-block w-100" alt="presentacion_1">
+    <!-- CARRUSEL -->
+    <section class="container-carrusel" id="container-carrusel">
+        <div class="carrusel" id="slider">
+            <div class="slider-div">
+                <img src="./assets/img/PRESENTACION.avif" alt="img1">
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/PRESENTACION_2.avif" class="d-block w-100" alt="PRESENTACION_2">
+            <div class="slider-div">
+                <img src="./assets/img/PRESENTACION_2.avif" alt="img2">
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/presentacion_3.jpg" class="d-block w-100" alt="presentacion_3">
+            <div class="slider-div">
+                <img src="./assets/img/presentacion_3.jpg" alt="img3">
+            </div>
+            <div class="slider-div">
+                <img src="./assets/img/presentacion_4.avif" alt="img4">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- ARTICULOS  -->
+        <div class="btn-left"><i class='bx bx-left-arrow-alt'></i></div>
+        <div class="btn-right"><i class='bx bx-right-arrow-alt'></i></div>
+    </section>
+    <!-- ARTICULOS -->
     <section class="contenedor-items">
         <div class="item">
             <img src="assets/img/SACO.webp" alt="">
@@ -123,18 +116,42 @@
             </div>
         </div>
     </section>
-    <!-- SECCION DERECHOS -->
-    <footer class="derechos">
-        <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
-        <a href="https://www.instagram.com/" target="_blank ">INSTAGRAM</a>
-        <a href="https://web.whatsapp.com/" target="_blank">WHATSAPP</a>
-        <p>&copy; LIMCOR , Todos los derechos reservados</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="derechos">
+            <div class="frecuentes">
+                <h3>Contenido</h3>
+                <a href="" class="link-frt">Contacto</a>
+                <a href="" class="link-frt">LIMCOR CLUB</a>
+                <a href="" class="link-frt">Franquicias</a>
+                <a href="" class="link-frt">Formas de pago</a>
+                <a href="" class="link-frt">Formas de envio</a>
+                <a href="" class="link-frt">Cambios y devoluciones</a>
+                <a href="" class="link-frt">Preguntas frecuentes</a>
+                <a href="" class="link-frt">Venta mayorista</a>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.png" alt=""
+                        class="icono-rs"></a>
+                <a href="https://www.instagram.com/" target="_blank "><img src="assets/img/instagram.png" alt=""
+                        class="icono-rs"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="assets/img/whatsapp.png" alt=""
+                        class="icono-rs"></a>
+                <a href=""><img src="./assets/img/data-fiscal.jpg" alt="" class="icono"></a>
+            </div>
+        </div>
+        <div class="derechos-copy">
+            <p>&copy; LIMCOR , Todos los derechos reservados</p>
+        </div>
     </footer>
 
-    <!-- SCRIPTS JS -->
+
+    <!-- LINKS JS -->
+    <script src="JS/carrusel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

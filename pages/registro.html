@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
+    <link rel="stylesheet" href="../assets/css/registro.css">
+    <link rel="stylesheet" href="../assets/css/cuenta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LIMCOR | Registro</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">LIMCOR</a>
+        <div class="busqueda">
+            <input type="text" placeholder="Que estas buscando?">
+            <button class="btn-buscar">Buscar</button>
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="navegacion" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="lista-navegacion">
+                <li>
+                    <a href="../index.html" class="active">INICIO</a>
+                </li>
+                <li>
+                    <a href="cuenta.html" class="active">MI CUENTA</a>
+                </li>
+                <li>
+                    <a href="" class="active">MI CARRITO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- NAVEGACION -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="">TEMPORADA S23</a></li>
+            <li><a href="">CATEGORIAS</a></li>
+            <li><a href="">PROMOCIONES</a></li>
+            <li><a href="">LOCALES</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- SECCION FORMULARIO REGISTRO -->
+    <form class="formulario-registro" id="formulario" action="">
+        <h2>FORMULARIO REGISTRO</h2>
+        <!-- Grupo Usuario -->
+        <div class="formulario-grupo" id="grupo-usuario">
+            <label for="usuario" class="formulario-label">Usuario</label>
+            <div class="formulario-grupo-input">
+                <input class="formulario-input" type="text" name="usuario" id="usuario">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*El usuario solo puede tener letras,numeros y "-" o "_" </p>
+        </div>
+
+        <!-- Grupo Nombre -->
+        <div class="formulario-grupo" id="grupo-nombre">
+            <label for="nombre" class="formulario-label">Nombre</label>
+            <div class="formulario-grupo-input">
+                <input class="formulario-input" type="text" name="nombre" id="nombre">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*Nombre extenso o contiene numeros</p>
+        </div>
+
+        <!-- Grupo apellido -->
+        <div class="formulario-grupo" id="grupo-apellido">
+            <label for="apellido" class="formulario-label">Apellido</label>
+            <div class="formulario-grupo-input">
+                <input type="text" name="apellido" id="apellido" class="formulario-input">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*Apellido extenso o contiene numeros</p>
+        </div>
+
+        <!-- Grupo Email -->
+        <div class="formulario-grupo" id="grupo-correo">
+            <label for="email" class="formulario-label">Email</label>
+            <div class="formulario-grupo-input">
+                <input class="formulario-input" type="email" name="correo" id="correo">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*Correo no valido</p>
+        </div>
+
+        <!-- Grupo Clave -->
+        <div class="formulario-grupo" id="grupo-clave">
+            <label for="clave" class="formulario-label">Clave</label>
+            <div class="formulario-grupo-input">
+                <input class="formulario-input" type="password" name="clave" id="clave">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*Clave no valido</p>
+        </div>
+
+
+        <!-- Grupo repeticion clave -->
+        <div class="formulario-grupo" id="grupo-repetirClave">
+            <label for="repetirClave" class="formulario-label">Repita su clave</label>
+            <div class="formulario-grupo-input">
+                <input class="formulario-input" type="password" name="repetirClave" id="repetirClave">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario-info">*Las claves no coinciden o invalido</p>
+        </div>
+            
+        <!-- Grupo Celular -->
+        <div class="formulario-grupo" id="grupo-celular">
+            <label for="celular" class="formulario-label">Celular</label>
+            <div class="formulario-grupo-input">
+                <input type="text" name="celular" class="formulario-input" placeholder="Ej: 1123445678" id="celular">
+                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>         
+            </div>
+            <p class="formulario-info">*Numero extenso o no valido</p>
+        </div>
+
+
+        <!-- Grupo terminos y condiciones -->
+        <div class="formulario-trm-cnd">
+            <input type="checkbox" name="terminos" id="terminos">
+            <p class="formulario-trm-cnd-p">
+                Estoy de acuerdo con los <a href="">Terminos y condiciones</a>
+            </p>
+        </div>
+        <!-- Mensaje si el formulario no se completa correctamente -->
+        <div class="formulario-mensaje-error" id="formulario-mensaje-error">
+            <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error : </b>Compruebe los datos correctamente</p>
+
+        </div>
+
+        <!-- Boton para enviar el formulario -->
+        <div class="formulario-grupo-btn">
+            <button type="submit" class="btn-registro">Enviar</button>
+            <p class="formulario-mensaje-exito" id="formulario-mensaje-exito"> !!!! Formulario enviado  !!!!</p>
+        </div>
+    </form>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="derechos">
+            <div class="frecuentes">
+                <h3>Contenido</h3>
+                <a href="" class="link-frt">Contacto</a>
+                <a href="" class="link-frt">LIMCOR CLUB</a>
+                <a href="" class="link-frt">Franquicias</a>
+                <a href="" class="link-frt">Formas de pago</a>
+                <a href="" class="link-frt">Formas de envio</a>
+                <a href="" class="link-frt">Cambios y devoluciones</a>
+                <a href="" class="link-frt">Preguntas frecuentes</a>
+                <a href="" class="link-frt">Venta mayorista</a>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt=""
+                        class="icono-rs"></a>
+                <a href="https://www.instagram.com/" target="_blank "><img src="../assets/img/instagram.png" alt=""
+                        class="icono-rs"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/whatsapp.png" alt=""
+                        class="icono-rs"></a>
+                <a href=""><img src="../assets/img/data-fiscal.jpg" alt="" class="icono"></a>
+            </div>
+        </div>
+        <div class="derechos-copy">
+            <p>&copy; LIMCOR , Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="../JS/script.js"></script>
+    <script src="../JS/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/7ae2358eea.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
